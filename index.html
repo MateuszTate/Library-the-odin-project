@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>My Library</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="add">
+            <h1>My book library</h1>
+            <h2>This is a project for <i><a href="https://www.theodinproject.com/lessons/node-path-javascript-library" target="_blank">The Odin Project</a></i> in which I have to make a library using Object Constructors and LocalStorage. <br>You can also view the <i><a href="https://github.com/MateuszTate/Library-the-odin-project" target="_blank">Github repository</a></i> of this project.</h2>
+            <form>
+                <div class="labels">
+                <label id="bookLabel">Book<input type="text" id="bookName" required></label><br>
+                <label id="authorLabel">Author<input type="text" id="authorName" required></label><br>
+                <label id="pagesLabel">Pages<input type="number" id="pagesNumber" required></label><br>
+                <label id="statusLabel">Status<select id="isRead">
+                    <option value="read">Read</option>
+                    <option value="notRead">Not Read</option>
+                </select>
+                </label>
+                <label><button type="button" id="submitButton" value="Add">SUBMIT</button></label>
+                </div>
+                
+            </form>
+        </div>
+        <div class="book-names">
+            <div class="title">Book</div>
+            <div class="author">Author</div>
+            <div class="pages">Pages</div>
+            <div class="read">Status</div>
+        </div>
+        <div class="result">
+            
+        </div>
+    </div>
+</body>
+</html>
