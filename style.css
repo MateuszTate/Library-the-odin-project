@@ -186,3 +186,24 @@ button[type="button"]:hover {
     font-weight: 700;
     font-size: 1.5rem;
 }
+
+.deleteButton {
+    background-color: red;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: rgb(91, 0, 0);
+}
+
+.readButton {
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #0f172a;
+}
