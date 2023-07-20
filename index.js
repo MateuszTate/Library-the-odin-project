@@ -92,7 +92,7 @@ function displayBooks() {
         delButtonDiv.classList.add("delButtonDiv");
 
         const delButton = document.createElement("button");
-        delButton.textContent = "DELETE";
+        delButton.textContent = "DEL";
         delButton.classList.add("deleteButton");
 
         delButton.id = "delID" + index;

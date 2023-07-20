@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #0f172a;
@@ -24,8 +24,6 @@ body > * {
     grid-column: 2/3;
     border-bottom: 1px solid grey;
 }
-
-
 
 .add {
     /* display: none; */
@@ -73,7 +71,7 @@ body > * {
 }
 
 #submitButton {
-    grid-row:  3/4;
+    grid-row: 3/4;
     grid-column: 1/3;
 }
 
@@ -100,7 +98,8 @@ h2 {
     margin-bottom: 3%;
 }
 
-input, select {
+input,
+select {
     height: 40px;
     border: none;
     border: 1px solid rgb(186, 186, 186);
@@ -134,9 +133,9 @@ button[type="button"]:hover {
 .result {
     /* display: flex; */
     flex-wrap: wrap;
-  }
+}
 
-  .book-container {
+.book-container {
     font-size: 1.2rem;
     /* height: 20px; */
     width: 100%;
@@ -145,33 +144,19 @@ button[type="button"]:hover {
     /* margin: 5px; */
     display: flex;
     gap: 20px;
-  }
+}
 
-  .book-container > * {
+.book-container > * {
     display: flex;
     width: 100%;
     justify-content: center;
     color: rgb(208, 208, 208);
     font-size: 1.1rem;
-  }
+}
 
-  .book-title {
+.book-title {
     font-style: italic;
-  }
-
-  .book-author {
-    /* text-decoration: underline; */
-  }
-
-  .book-pages {
-    /* color: grey; */
-  }
-
-  .book-read {
-    /* color: green; */
-  }
-
-
+}
 
 .book-names {
     font-size: 1.2rem;
@@ -206,4 +191,10 @@ button[type="button"]:hover {
     border-radius: 5px;
     font-weight: 700;
     color: #0f172a;
+}
+
+@media screen and (max-width: 800px) {
+    .result button {
+        font-size: 0.6rem;
+    }
 }
