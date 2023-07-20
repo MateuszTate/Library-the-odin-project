@@ -17,9 +17,9 @@
             <h2>This is a project for <i><a href="https://www.theodinproject.com/lessons/node-path-javascript-library" target="_blank">The Odin Project</a></i> in which I have to make a library using Object Constructors and LocalStorage. <br>You can also view the <i><a href="https://github.com/MateuszTate/Library-the-odin-project" target="_blank">Github repository</a></i> of this project.</h2>
             <form>
                 <div class="labels">
-                <label id="bookLabel">Book<input type="text" id="bookName" required></label><br>
-                <label id="authorLabel">Author<input type="text" id="authorName" required></label><br>
-                <label id="pagesLabel">Pages<input type="number" id="pagesNumber" required></label><br>
+                <label id="bookLabel">Book<input type="text" id="bookName" maxlength="70" required></label><br>
+                <label id="authorLabel">Author<input type="text" id="authorName" maxlength="40" required></label><br>
+                <label id="pagesLabel">Pages<input type="number" id="pagesNumber" min="10" max="5000" required></label><br>
                 <label id="statusLabel">Status<select id="isRead">
                     <option value="read">Read</option>
                     <option value="notRead">Not Read</option>

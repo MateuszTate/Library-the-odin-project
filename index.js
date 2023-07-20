@@ -19,11 +19,35 @@ function addBookToLibrary() {
     const howManyPages = document.getElementById('pagesNumber').value;
     const isReadValue = document.getElementById('isRead').value;
 
+    
+
     const newBook = new Book(bookNameValue, authorNameValue, howManyPages, isReadValue);
     myLibrary.push(newBook);
 }
 
 
+
+// form validation
+
+function validate() {
+    const bookNameValue = document.getElementById('bookName').value;
+    const authorNameValue = document.getElementById('authorName').value;
+    const howManyPages = document.getElementById('pagesNumber').value;
+
+    const submitButton = document.getElementById('submitButton');
+
+    if (bookNameValue.length < 1 || authorNameValue.length < 1 || howManyPages < 10) {
+        submitButton.disabled = true;
+    } else {
+        submitButton.disabled = false;
+    }
+}
+
+validate();
+
+document.getElementById('bookName').addEventListener("input", validate);
+document.getElementById('authorName').addEventListener("input", validate);
+document.getElementById('pagesNumber').addEventListener("input", validate);
 
 const result = document.querySelector('.result');
 function displayBooks () {
@@ -67,5 +91,3 @@ submitButton.addEventListener("click", function(){
     console.log(myLibrary);
     displayBooks();
 });
-
-
